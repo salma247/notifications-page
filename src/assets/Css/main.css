@@ -1,0 +1,125 @@
+@font-face {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  src: url("../fonts/PlusJakartaSans-VariableFont_wght.ttf") format("embedded-opentype");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(211deg, 68%, 94%);
+  font-family: "Plus Jakarta sans", sans-serif;
+}
+@media (min-width: 901px) {
+  body {
+    padding: 4rem 0;
+  }
+}
+
+.notifications {
+  max-width: 800px;
+  background-color: hsl(210deg, 60%, 98%);
+  margin: 0rem auto;
+  padding: 1rem;
+}
+.notifications__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.notifications__header__new {
+  background-color: hsl(219deg, 85%, 26%);
+  color: hsl(0deg, 0%, 100%);
+  padding: 0.2rem 0.5rem;
+  margin-left: 0.5rem;
+  font-weight: bold;
+  border-radius: 0.5rem;
+}
+.notifications__header__button {
+  color: hsl(219deg, 14%, 63%);
+  outline-color: transparent;
+  border: none;
+  font-size: 1rem;
+  background-color: transparent;
+  cursor: pointer;
+}
+.notifications__header__button:hover {
+  color: hsl(219deg, 85%, 26%);
+}
+.notifications .notification {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+.notifications .notification--unseen {
+  background-color: hsl(211deg, 68%, 94%);
+}
+.notifications .notification--unseen .notification__content__text::after {
+  content: "";
+  display: inline-block;
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: hsl(1deg, 90%, 64%);
+  border-radius: 50%;
+  margin-left: 5px;
+}
+.notifications .notification__avatar img {
+  width: 50px;
+  height: 50px;
+}
+.notifications .notification__content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 0.5rem;
+}
+.notifications .notification__content__text .name {
+  font-weight: bold;
+}
+.notifications .notification__content__text .post {
+  color: hsl(219deg, 12%, 42%);
+  font-weight: bold;
+}
+.notifications .notification__content__text .group {
+  color: hsl(219deg, 85%, 26%);
+  font-weight: bold;
+}
+.notifications .notification__content__date {
+  color: hsl(219deg, 14%, 63%);
+}
+@media (min-width: 901px) {
+  .notifications {
+    border-radius: 1rem;
+    box-shadow: 0 0 2rem 0 rgba(94, 103, 120, 0.3);
+    padding: 2rem;
+  }
+}
+
+.message--container {
+  color: hsl(224deg, 21%, 14%);
+  border: 1px solid hsl(205deg, 33%, 90%);
+  border-radius: 5px;
+  padding: 1rem;
+  cursor: pointer;
+}
+.message--container:hover {
+  background-color: hsl(211deg, 68%, 94%);
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+.container--picture {
+  margin-left: 0.5rem;
+}
+.container--picture img {
+  width: 50px;
+}

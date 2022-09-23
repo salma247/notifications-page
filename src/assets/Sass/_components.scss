@@ -1,0 +1,113 @@
+//Components: anything reusable such as buttons, navbars, cards etc.
+
+.notifications {
+    max-width: 800px;
+    background-color: $Very-light-grayish-blue;
+    margin: 0rem auto;
+    padding: 1rem;
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 2rem;
+        font-size: 1rem;
+        font-weight: bold;
+
+        &__new {
+            background-color: $Blue;
+            color: $White;
+            padding: 0.2rem 0.5rem;
+            margin-left: 0.5rem;
+            font-weight: bold;
+            border-radius: 0.5rem;
+        }
+
+        &__button {
+            color: $Grayish-blue;
+            outline-color: transparent;
+            border: none;
+            font-size: 1rem;
+            background-color: transparent;
+            cursor: pointer;
+
+            &:hover {
+                color: $Blue;
+            }
+        }
+    }
+
+    .notification {
+        display: flex;
+        gap: 1rem;
+        margin-top: 1rem;
+        padding: 1rem;
+        border-radius: 0.5rem;
+
+        &--unseen {
+            background-color: $Light-grayish-blue-1;
+
+            .notification__content__text::after {
+                content: "";
+                display: inline-block;
+                width: 0.5rem;
+                height: 0.5rem;
+                background-color: $Red;
+                border-radius: 50%;
+                margin-left: 5px;
+            }
+        }
+
+        &__avatar img {
+            width: 50px;
+            height: 50px;
+        }
+
+        &__content {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            gap: 0.5rem;
+
+            &__text .name {
+                font-weight: bold;
+            }
+
+            &__text .post {
+                color: $Dark-grayish-blue;
+                font-weight: bold;
+            }
+
+            &__text .group {
+                color: $Blue;
+                font-weight: bold;
+            }
+
+            &__date {
+                color: $Grayish-blue;
+            }
+        }
+    }
+
+    @include tablet{
+        padding: 2rem;
+    }
+
+    @include desktop {
+        border-radius: 1rem;
+        box-shadow: 0 0 2rem 0 rgba($Dark-grayish-blue, 0.3);
+        padding: 2rem;
+    }
+}
+
+.message--container {
+    color: $Very-dark-blue;
+    border: 1px solid $Light-grayish-blue-2;
+    border-radius: 5px;
+    padding: 1rem;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $Light-grayish-blue-1;
+    }
+}
