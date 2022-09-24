@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/notifications-page/static/css/main.974de51c.css",
-    "main.js": "/notifications-page/static/js/main.be0f63df.js",
+    "main.css": "/notifications-page/static/css/main.448a78c4.css",
+    "main.js": "/notifications-page/static/js/main.06c6f7d5.js",
     "static/js/787.8f2f970a.chunk.js": "/notifications-page/static/js/787.8f2f970a.chunk.js",
     "static/media/PlusJakartaSans-VariableFont_wght.ttf": "/notifications-page/static/media/PlusJakartaSans-VariableFont_wght.ae47e4d01757abf8ad63.ttf",
     "static/media/avatar-rizky-hasanuddin.webp": "/notifications-page/static/media/avatar-rizky-hasanuddin.2c9e9a5d4982e8f1b614.webp",
@@ -13,12 +13,12 @@
     "static/media/avatar-kimberly-smith.webp": "/notifications-page/static/media/avatar-kimberly-smith.00520dc2b2f8e585aac5.webp",
     "static/media/avatar-angela-gray.webp": "/notifications-page/static/media/avatar-angela-gray.be3397e8fa98e1cac926.webp",
     "index.html": "/notifications-page/index.html",
-    "main.974de51c.css.map": "/notifications-page/static/css/main.974de51c.css.map",
-    "main.be0f63df.js.map": "/notifications-page/static/js/main.be0f63df.js.map",
+    "main.448a78c4.css.map": "/notifications-page/static/css/main.448a78c4.css.map",
+    "main.06c6f7d5.js.map": "/notifications-page/static/js/main.06c6f7d5.js.map",
     "787.8f2f970a.chunk.js.map": "/notifications-page/static/js/787.8f2f970a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.974de51c.css",
-    "static/js/main.be0f63df.js"
+    "static/css/main.448a78c4.css",
+    "static/js/main.06c6f7d5.js"
   ]
 }
