@@ -30,8 +30,6 @@ Users should be able to:
 
 - Desktop
 ![](./screenshot.jpeg)
-- Mobile
-![](./screenshot-mobile.jpeg)
 
 ### Links
 
