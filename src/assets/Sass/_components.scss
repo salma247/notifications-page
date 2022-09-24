@@ -2,7 +2,7 @@
 
 .notifications {
     max-width: 800px;
-    background-color: $Very-light-grayish-blue;
+    background-color: $White;
     margin: 0rem auto;
     padding: 2rem 1rem;
 
@@ -44,8 +44,16 @@
         padding: 1rem;
         border-radius: 0.5rem;
 
+        a{
+            text-decoration: none;
+            &:hover {
+                color: $Blue;
+                cursor: pointer;
+            }
+        }
+
         &--unseen {
-            background-color: $Light-grayish-blue-1;
+            background-color: $Very-light-grayish-blue;
 
             .notification__content__text::after {
                 content: "";
@@ -71,15 +79,16 @@
 
             &__text .name {
                 font-weight: bold;
+                color: $Very-dark-blue;
             }
 
             &__text .post {
-                color: $Dark-grayish-blue;
+                color: $Grayish-blue;
                 font-weight: bold;
             }
 
             &__text .group {
-                color: $Blue;
+                color: $Dark-grayish-blue;
                 font-weight: bold;
             }
 

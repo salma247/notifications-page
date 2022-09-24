@@ -7,7 +7,7 @@ export default function post({ notification }) {
             <div className="container">
                 <div className="container--text">
                     <div className="notification__content__text">
-                        <span className="name">{notification.name} </span>
+                        <a href="#/" className="name">{notification.name} </a>
                         <span className="title">{notification.content.title} </span>
                     </div>
                     <div className="notification__content__date">

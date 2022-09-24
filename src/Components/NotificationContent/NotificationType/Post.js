@@ -5,9 +5,9 @@ export default function post({ notification }) {
     return (
         <div className="notification__content">
             <div className="notification__content__text">
-                <span className="name">{notification.name} </span>
+                <a href="#/" className="name">{notification.name} </a>
                 <span className="title">{notification.content.title} </span>
-                <span className="post">{notification.content.content}</span>
+                <a href="#/" className="post">{notification.content.content}</a>
             </div>
             <div className="notification__content__date">
                 <NotificationTime time={notification.date} />
